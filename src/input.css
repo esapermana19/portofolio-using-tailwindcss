@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+    /* Gunakan format --container-*: value; */
+    --container-center: true;
+    --container-padding: 1rem;
+    
+    /* Breakpoint 2xl kamu sudah benar */
+    --breakpoint-2xl: 1320px;
+
+    --color-primary: oklch(70.4% 0.14 182.503);
+    --color-dark: oklch(20.8% 0.042 265.755);
+}
+
+@theme {
+    --container-center: true;
+    --container-padding: 1rem;
+    
+    /* Coba perkecil breakpoint 2xl sedikit agar lebih "ngumpul" ke tengah */
+    --breakpoint-2xl: 1280px; 
+
+    --color-primary: oklch(70.4% 0.14 182.503);
+    --color-dark: oklch(20.8% 0.042 265.755);
+}
+
+/* Pastikan ini tetap ada di bawah @theme untuk memaksa margin auto */
+@utility container {
+  margin-inline: auto;
+  max-width: 100%;
+  @media (width >= 640px) { max-width: 640px; }
+  @media (width >= 768px) { max-width: 768px; }
+  @media (width >= 1024px) { max-width: 1024px; }
+  @media (width >= 1280px) { max-width: 1280px; }
+}
