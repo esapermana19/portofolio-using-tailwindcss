@@ -20,6 +20,7 @@
     --breakpoint-2xl: 1280px; 
 
     --color-primary: oklch(70.4% 0.14 182.503);
+    --color-secondary: oklch(55.4% 0.046 257.417);
     --color-dark: oklch(20.8% 0.042 265.755);
 }
 
